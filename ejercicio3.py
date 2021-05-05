@@ -41,7 +41,7 @@ print(r)
 '''
 
 
-'''
+
 nota1 = 3.4
 nota2 = 2
 nota3 = 2.9
@@ -61,11 +61,11 @@ print("la nota maxima es : " + str(notaMax))
 notaMin = min(nota1,nota2,nota3,nota4,nota5)
 print("la nota minima es : " + str(notaMin)) 
 
-pi = 3.715
-pi = round(pi,1)
-print(pi)
-'''
+#pi = 3.715
+#pi = round(pi,1)
+#print(pi)
 
+'''
 texto = "ciclo 1 fundamentos de programacion"
 print(len(texto))
 
@@ -74,5 +74,5 @@ print(len(x))
 
 y = range(20,100)
 print(len(y))
-
+'''
 
