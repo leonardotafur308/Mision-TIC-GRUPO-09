@@ -56,21 +56,49 @@ print(factura[-3])
 '''
 
 version_phone = [6,7,8,13]
-print(version_phone)
+# print(version_phone)
 version_phone.append(10)
-print(version_phone)
+# print(version_phone)
 version_phone.append('iphone_12')
-print(version_phone)
-print(version_phone.count('iphone_12'))
+# print(version_phone)
+# print(version_phone.count('iphone_12'))
 
 version_phone.extend([2.5])
-print(version_phone)
+# print(version_phone)
 version_phone.extend(range(13,17))
-print(version_phone)
+# print(version_phone)
 
+'''
 try:
     print(version_phone.index(1))
 except:
-    print('invalido!')
+    print('el valor no se encuentra en la lista')
+'''
 
-print(version_phone.pop(7))
+'''
+version_phone.pop()
+
+version_phone.insert(2,3.6)
+print(version_phone)
+
+version_phone.pop(6)
+print(version_phone)
+
+# version_phone.remove(13)
+# print(version_phone)
+version_phone.reverse()
+print(version_phone)
+
+version_phone.sort()
+print(version_phone)
+
+# boo_t= True
+version_phone.sort(reverse=True)
+print(version_phone)
+'''
+
+lista = [2,'cms',True,['phone',10]]
+
+l2 = lista[1]
+
+print(l2)
