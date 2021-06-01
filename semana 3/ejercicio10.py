@@ -19,7 +19,7 @@ diccionarioEstudiantes = {
                 'acudiente_dos': 'Sofía'
             }
         ],
-        'promedio': 5.0
+        'promedio': 4.0
     },
     'FHT43523': {
         'nombres': 'Iván',
@@ -49,7 +49,7 @@ diccionarioEstudiantes = {
                 'acudiente_dos': 'Angy'
             }
         ],
-        'promedio': 5.0
+        'promedio': 3.5
     }
 }
 
@@ -90,6 +90,19 @@ for codigoEstudiante,infoEstudiantes in diccionarioEstudiantes.items():
     print(infoEstudiantes['acudientes'][0]['acudiente_dos'])
 '''
 
+'''
 for codigoEstudiante,infoEstudiantes in diccionarioEstudiantes.items():
     for acu in range(len(infoEstudiantes['acudientes'])):
         print(infoEstudiantes['acudientes'][acu]['acudiente_dos'])
+'''
+
+# Obtener los nombres y apellidos que obtuvieron nota mayor a 4 
+# eliminar los demas estudiantes del dict 
+
+for codigoEstudiante,infoEstudiante in diccionarioEstudiantes.items():
+    promedio = infoEstudiante['promedio']
+    if promedio > 4:
+        print('Estudiante : ' + infoEstudiante['nombres']+ ' '+infoEstudiante['apellidos'])
+    else:
+        # del diccionarioEstudiantes[codigoEstudiante]
+        diccionarioEstudiantes.pop(codigoEstudiante)
